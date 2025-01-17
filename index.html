@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Large Language Model (LLM) is an Excellent Reinforcement Learning Researcher in both Single-Agent and Multi-Agent Scenarios </title>
+  <title>Two Heads are Better than One: Distill Large Language Model Features Into Small Models with Feature Decomposition and Mixture </title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Large Language Model (LLM) is an Excellent Reinforcement Learning Researcher in both Single-Agent and Multi-Agent Scenarios </h1>
+            <h1 class="title is-1 publication-title">Two Heads are Better than One: Distill Large Language Model Features Into Small Models with Feature Decomposition and Mixture </h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -166,8 +166,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In quantitative finance, particularly in optimized trade execution, reinforcement learning (RL) has shown promise due to its ability to interact with market environments based on real data. However, traditional RL methods suffer from slow research speed and rely on static market assumptions which not consider the agent execution action impact to the environment, which are inadequate for dynamic environments. To address these challenges, we propose a Self-Evolutional Single-Agent Multi-Agent RL (SE-RL) framework. This framework leverages large language models (LLMs) to designed and improve the different RL algorithm module including agent model design, state space, reward function, profiling, communication and state imagination through LLM generate module output or generate code ways. It includes a dual-enhancement mechanism at both high-level (prompt refinement and reflection) and low-level (weight fine-tuning) to improve the accuracy of LLM-generated RL algorithms. Additionally, we use a multi-agent system to simulate dynamic financial markets, accounting for the impact of order executions on market dynamics. To further enhance training with such dynamic market, we propose a machine semi-unlearning method that alternates between static and dynamic environments, integrating real historical market data and simulated market impacts. Comprehensive experiments on 200 realistic stock datasets demonstrate that our proposed framework outperforms current state-of-the-art baselines, offering a more efficient and practical solution for trade execution in dynamic markets.
-    </div>
+            Market making (MM) via Reinforcement Learning (RL) has attracted significant attention in financial trading. With the development of Large Language Models (LLMs), more and more attempts are being made to apply LLM to such areas as simple direct application of LLM as an agent shows a significant performance. Such methods are hindered by their slow inference speed while most of the current research has not studied LLM distillation for this specific task. To address this, we first propose the fluorescent probe to study the mechanism of the LLM's feature. Based on the observation found by our investigation, we propose Cooperative distillation(CoopDistill), a novel framework that decouples LLM features across four dimensions: layer, task, data, and architecture. Various student models collaboratively learn LLM complex features along these dimensions where different student models are responsible for different LLM features. Furthermore, CoopDistill introduce an H\'{a}jek-MOE to integrate the output of the student models by investigating the project contribution of different models along different input data vectors. Extensive experimental results on four real-world market datasets demonstrate the superiority of CoopDistill over the current distillation method and RL-based market-making strategies.
   </div>
 </section>
 <!-- End paper abstract -->
